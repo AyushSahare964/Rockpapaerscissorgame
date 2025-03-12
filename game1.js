@@ -15,7 +15,7 @@ const genCompChoice = () => {
 const drawGame = () => {
    
     
-    img.src = "./images/Draw.webp"
+    img.src = "Draw.webp"
     document.body.appendChild(img);
     console.log(drawGame);
     msg.innerText = "Game is Draw, Play AGAIN!";
@@ -28,14 +28,14 @@ const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin){
         userScore++;
         userScorePara.innerText = userScore;
-        img.src = "./images/win.gif"
+        img.src = "win.gif"
         document.body.appendChild(img);
         msg.innerText = `You Win ! ${userChoice} beats ${compChoice}`;
       
     }else {
         compScore++;
         compScorePara.innerText = compScore;
-        img.src = "./images/paperwin.jpg"
+        img.src = "paperwin.jpg"
         document.body.appendChild(img);
         console.log(drawGame);
         msg.innerText = `You lose !! ${compChoice} beats ${userChoice}`;
